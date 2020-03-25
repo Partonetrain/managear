@@ -3,9 +3,9 @@
   "max_level": 2,
   "cancels_with": [],
   "name": {
-    "text": "Mana"
+    "translate": "trait.managear.mana"
   },
   "description": {
-    "text": "Uses mana to restore durability (higher levels use more mana)"
+    "translate": "trait.managear.mana.desc"
   }
 }

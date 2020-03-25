@@ -29,7 +29,7 @@
         }
     },
     "name": {
-        "text": "Elementium"
+        "translate": "part.managear.main.elementium"
     },
     "textures": {
         "all": {

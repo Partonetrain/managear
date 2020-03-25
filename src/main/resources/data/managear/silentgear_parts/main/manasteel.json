@@ -29,7 +29,7 @@
         }
     },
     "name": {
-        "text": "Manasteel"
+        "translate": "part.managear.main.manasteel"
     },
     "textures": {
         "all": {

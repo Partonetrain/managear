@@ -30,7 +30,7 @@
         }
     },
     "name": {
-        "text": "Terrasteel"
+        "translate": "part.managear.main.terrasteel"
     },
     "textures": {
         "all": {
