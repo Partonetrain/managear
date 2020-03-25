@@ -17,6 +17,7 @@
     ],
     "traits": [
         {"name": "managear:mana", "level": 1},
+        {"name": "managear:pixie", "level": 1},
         {"name": "silentgear:malleable", "level": 2}
     ],
     "crafting_items": {

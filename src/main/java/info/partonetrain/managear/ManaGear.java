@@ -22,7 +22,7 @@ public class ManaGear {
     public static final String MOD_ID = "managear";
 
     // Directly reference a log4j logger.
-    private static final Logger LOGGER = LogManager.getLogger();
+    public static final Logger LOGGER = LogManager.getLogger();
 
     public static net.silentchaos512.gear.IProxy PROXY;
 
@@ -44,7 +44,7 @@ public class ManaGear {
 
     private void setup(final FMLCommonSetupEvent event) {
         // some preinit code
-        LOGGER.info("ManaGear Loading");
+        LOGGER.debug("ManaGear Loading");
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {

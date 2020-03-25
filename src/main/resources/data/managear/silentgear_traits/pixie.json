@@ -1,0 +1,11 @@
+{
+  "type": "managear:pixie",
+  "max_level": 1,
+  "cancels_with": [],
+  "name": {
+    "translate": "trait.managear.pixie"
+  },
+  "description": {
+    "translate": "trait.managear.pixie.desc"
+  }
+}
