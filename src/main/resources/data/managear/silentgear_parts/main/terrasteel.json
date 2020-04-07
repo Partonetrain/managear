@@ -86,8 +86,8 @@
       "highlight": true,
       "texture_domain": "silentgear",
       "texture_suffix": "diamond",
-      "normal_color": "#EF8CBD",
-      "broken_color": "#EF8CBD"
+      "normal_color": "#57FF0D",
+      "broken_color": "#57FF0D"
     }
   },
   "availability": {
