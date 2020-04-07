@@ -1,48 +1,93 @@
 {
-    "type": "silentgear:main",
-    "stats": [
-        {"name": "durability",      "value":  300},
-        {"name": "armor_durability","value":   16},
-        {"name": "enchantability",  "value":   20},
-        {"name": "harvest_level",   "value":    3},
-        {"name": "harvest_speed",   "value":    6},
-        {"name": "melee_damage",    "value":    2},
-        {"name": "attack_speed",    "value": -0.1},
-        {"name": "armor",           "value":   16},
-        {"name": "armor_toughness", "value":    0},
-        {"name": "ranged_damage",   "value":    1},
-        {"name": "ranged_speed",    "value":  0.1},
-        {"name": "rarity",          "value":   20},
-        {"name": "chargeability",   "value":  1.0}
-    ],
-    "traits": [
-        {"name": "managear:mana", "level": 1},
-        {"name": "silentgear:malleable", "level": 2}
-    ],
-    "crafting_items": {
-        "normal": {
-            "tag": "forge:ingots/manasteel"
-        },
-        "small": {
-            "tag": "forge:nuggets/manasteel",
-            "size": 9
-        }
+  "type": "silentgear:main",
+  "stats": [
+    {
+      "name": "durability",
+      "value": 300
     },
-    "name": {
-        "translate": "part.managear.main.manasteel"
+    {
+      "name": "armor_durability",
+      "value": 16
     },
-    "textures": {
-        "all": {
-            "lite_texture": "high_contrast_with_highlight",
-            "highlight": true,
-            "texture_domain": "silentgear",
-            "texture_suffix": "iron",
-            "normal_color": "#0A4896",
-            "broken_color": "#0A4896"
-        }
+    {
+      "name": "enchantability",
+      "value": 20
     },
-    "availability": {
-        "tier": 2,
-        "gear_blacklist": []
+    {
+      "name": "harvest_level",
+      "value": 3
+    },
+    {
+      "name": "harvest_speed",
+      "value": 6
+    },
+    {
+      "name": "melee_damage",
+      "value": 2
+    },
+    {
+      "name": "attack_speed",
+      "value": -0.1
+    },
+    {
+      "name": "armor",
+      "value": 16
+    },
+    {
+      "name": "armor_toughness",
+      "value": 0
+    },
+    {
+      "name": "ranged_damage",
+      "value": 1
+    },
+    {
+      "name": "ranged_speed",
+      "value": 0.1
+    },
+    {
+      "name": "rarity",
+      "value": 20
+    },
+    {
+      "name": "chargeability",
+      "value": 1.0
     }
+  ],
+  "traits": [
+    {
+      "name": "managear:mana",
+      "level": 1
+    },
+    {
+      "name": "silentgear:malleable",
+      "level": 2
+    }
+  ],
+  "crafting_items": {
+    "normal": {
+      "tag": "forge:ingots/manasteel"
+    },
+    "small": {
+      "tag": "forge:nuggets/manasteel",
+      "size": 9
+    }
+  },
+  "name": {
+    "translate": "part.managear.main.manasteel"
+  },
+  "textures": {
+    "all": {
+      "lite_texture": "high_contrast_with_highlight",
+      "highlight": true,
+      "texture_domain": "silentgear",
+      "texture_suffix": "iron",
+      "normal_color": "#68AFEE",
+      "broken_color": "#68AFEE"
+    }
+  },
+  "availability": {
+    "tier": 2,
+    "gear_blacklist": []
+  }
 }

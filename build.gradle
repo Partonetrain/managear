@@ -14,7 +14,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '0.9'
+version = '1.0'
 group = 'info.partonetrain.managear' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'managear'
 
@@ -138,7 +138,7 @@ dependencies {
     compileOnly fg.deobf("top.theillusivec4.curios:curios:FORGE-1.15.2-2.0:api")
     runtimeOnly fg.deobf("top.theillusivec4.curios:curios:FORGE-1.15.2-2.0")
 
-    compile("net.silentchaos512:silent-gear-1.15.2:1.5.4")
+    compile("net.silentchaos512:silent-gear-1.15.2:1.5.6")
     compile("net.silentchaos512:silent-lib-1.15.2:4.+")
     compile("net.silentchaos512:silent-utils:1.0.7")
 

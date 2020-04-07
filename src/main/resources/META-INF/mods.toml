@@ -14,7 +14,7 @@ loaderVersion="[31,)" #mandatory This is typically bumped every Minecraft versio
 # The modid of the mod
 modId="managear" #mandatory
 # The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
-version="0.9" #mandatory
+version="1.0" #mandatory
  # A display name for the mod
 displayName="Mana Gear" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification <here>
@@ -24,7 +24,7 @@ displayName="Mana Gear" #mandatory
 # A file name (in the root of the mod JAR) containing a logo for display
 #logoFile="examplemod.png" #optional
 # A text field displayed in the mod UI
-credits="Thanks for this example mod goes to Java" #optional
+credits="Thanks to SilentChaos for SilentGear, Vazkii and WillieWillus for Botania" #optional
 # A text field displayed in the mod UI
 authors="Partonetrain" #optional
 # The description text for the mod (multi line!) (#mandatory)
@@ -36,7 +36,7 @@ description='''Mana Gear - SilentGear/Botania bridge'''
     # Does this dependency have to exist - if not, ordering below must be specified
     mandatory=true #mandatory
     # The version range of the dependency
-    versionRange="[1.5.4+79,)" #mandatory
+    versionRange="[1.5.6,)" #mandatory
     # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
     ordering="AFTER"
     # Side this dependency is applied on - BOTH, CLIENT or SERVER

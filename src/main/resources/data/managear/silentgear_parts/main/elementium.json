@@ -1,49 +1,97 @@
 {
-    "type": "silentgear:main",
-    "stats": [
-        {"name": "durability",      "value":  720},
-        {"name": "armor_durability","value":   18},
-        {"name": "enchantability",  "value":   20},
-        {"name": "harvest_level",   "value":    3},
-        {"name": "harvest_speed",   "value":  6.2},
-        {"name": "melee_damage",    "value":    2},
-        {"name": "attack_speed",    "value": -0.1},
-        {"name": "armor",           "value":   16},
-        {"name": "armor_toughness", "value":    0},
-        {"name": "ranged_damage",   "value":  1.5},
-        {"name": "ranged_speed",    "value":  0.2},
-        {"name": "rarity",          "value":   30},
-        {"name": "chargeability",   "value":  1.2}
-    ],
-    "traits": [
-        {"name": "managear:mana", "level": 1},
-        {"name": "managear:pixie", "level": 1},
-        {"name": "silentgear:malleable", "level": 2}
-    ],
-    "crafting_items": {
-        "normal": {
-            "tag": "forge:ingots/elementium"
-        },
-        "small": {
-            "tag": "forge:nuggets/elementium",
-            "size": 9
-        }
+  "type": "silentgear:main",
+  "stats": [
+    {
+      "name": "durability",
+      "value": 720
     },
-    "name": {
-        "translate": "part.managear.main.elementium"
+    {
+      "name": "armor_durability",
+      "value": 18
     },
-    "textures": {
-        "all": {
-            "lite_texture": "high_contrast_with_highlight",
-            "highlight": true,
-            "texture_domain": "silentgear",
-            "texture_suffix": "iron",
-            "normal_color": "#F17CBC",
-            "broken_color": "#F17CBC"
-        }
+    {
+      "name": "enchantability",
+      "value": 20
     },
-    "availability": {
-        "tier": 3,
-        "gear_blacklist": []
+    {
+      "name": "harvest_level",
+      "value": 3
+    },
+    {
+      "name": "harvest_speed",
+      "value": 6.2
+    },
+    {
+      "name": "melee_damage",
+      "value": 2
+    },
+    {
+      "name": "attack_speed",
+      "value": -0.1
+    },
+    {
+      "name": "armor",
+      "value": 16
+    },
+    {
+      "name": "armor_toughness",
+      "value": 0
+    },
+    {
+      "name": "ranged_damage",
+      "value": 1.5
+    },
+    {
+      "name": "ranged_speed",
+      "value": 0.2
+    },
+    {
+      "name": "rarity",
+      "value": 30
+    },
+    {
+      "name": "chargeability",
+      "value": 1.2
     }
+  ],
+  "traits": [
+    {
+      "name": "managear:mana",
+      "level": 1
+    },
+    {
+      "name": "managear:pixie",
+      "level": 1
+    },
+    {
+      "name": "silentgear:malleable",
+      "level": 2
+    }
+  ],
+  "crafting_items": {
+    "normal": {
+      "tag": "forge:ingots/elementium"
+    },
+    "small": {
+      "tag": "forge:nuggets/elementium",
+      "size": 9
+    }
+  },
+  "name": {
+    "translate": "part.managear.main.elementium"
+  },
+  "textures": {
+    "all": {
+      "lite_texture": "high_contrast_with_highlight",
+      "highlight": true,
+      "texture_domain": "silentgear",
+      "texture_suffix": "iron",
+      "normal_color": "#EF8CBD",
+      "broken_color": "#EF8CBD"
+    }
+  },
+  "availability": {
+    "tier": 3,
+    "gear_blacklist": []
+  }
 }

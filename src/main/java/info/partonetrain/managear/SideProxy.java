@@ -49,6 +49,7 @@ public class SideProxy implements net.silentchaos512.gear.IProxy {
         }
     }
 
-    void clientSetup(FMLClientSetupEvent event) {}
+    void clientSetup(FMLClientSetupEvent event) {
+    }
 
 }

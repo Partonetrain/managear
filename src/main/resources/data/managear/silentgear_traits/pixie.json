@@ -1,7 +1,54 @@
 {
-  "type": "managear:pixie",
+  "type": "silentgear:attribute_trait",
   "max_level": 1,
   "cancels_with": [],
+  "attribute_modifiers": {
+    "armor/head": [
+      {
+        "attribute": "botania.pixieSpawnChance",
+        "value": [
+          0.11
+        ],
+        "operation": 0
+      }
+    ],
+    "armor/chest": [
+      {
+        "attribute": "botania.pixieSpawnChance",
+        "value": [
+          0.17
+        ],
+        "operation": 0
+      }
+    ],
+    "armor/legs": [
+      {
+        "attribute": "botania.pixieSpawnChance",
+        "value": [
+          0.15
+        ],
+        "operation": 0
+      }
+    ],
+    "armor/feet": [
+      {
+        "attribute": "botania.pixieSpawnChance",
+        "value": [
+          0.09
+        ],
+        "operation": 0
+      }
+    ],
+    "tool/mainhand": [
+      {
+        "attribute": "botania.pixieSpawnChance",
+        "value": [
+          0.05
+        ],
+        "operation": 0
+      }
+    ]
+  },
   "name": {
     "translate": "trait.managear.pixie"
   },
