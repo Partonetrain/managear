@@ -122,7 +122,7 @@ dependencies {
     // Specify the version of Minecraft to use, If this is any group other then 'net.minecraft' it is assumed
     // that the dep is a ForgeGradle 'patcher' dependency. And it's patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
-    minecraft 'net.minecraftforge:forge:1.15.2-31.1.25'
+    minecraft 'net.minecraftforge:forge:1.15.2-31.1.63'
 
     // You may put jars on which you depend on in ./libs or you may define them like so..
     // compile "some.group:artifact:version:classifier"
@@ -138,7 +138,7 @@ dependencies {
     compileOnly fg.deobf("top.theillusivec4.curios:curios:FORGE-1.15.2-2.0:api")
     runtimeOnly fg.deobf("top.theillusivec4.curios:curios:FORGE-1.15.2-2.0")
 
-    compile("net.silentchaos512:silent-gear-1.15.2:1.5.6")
+    compile("net.silentchaos512:silent-gear-1.15.2:1.6.1")
     compile("net.silentchaos512:silent-lib-1.15.2:4.+")
     compile("net.silentchaos512:silent-utils:1.0.7")
 

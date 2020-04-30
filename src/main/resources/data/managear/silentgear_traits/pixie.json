@@ -47,6 +47,15 @@
         ],
         "operation": 0
       }
+    ],
+    "tool/offhand": [
+      {
+        "attribute": "botania.pixieSpawnChance",
+        "value": [
+          0.025
+        ],
+        "operation": 0
+      }
     ]
   },
   "name": {
