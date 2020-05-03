@@ -27,7 +27,7 @@ public class ManaTrait extends SimpleTrait {
             manaToUse = MANA_PER_DAMAGE_TIER_ONE;
 
         ItemStack thisGear = context.getGear();
-        if (!world.isRemote && player instanceof PlayerEntity && thisGear.getDamage() > 0 && ManaItemHandler.requestManaExactForTool(thisGear, (PlayerEntity) player, manaToUse, true) && isEquipped)
+        if (!world.isRemote && player instanceof PlayerEntity && thisGear.getDamage() > 0 && ManaItemHandler.instance().requestManaExactForTool(thisGear, (PlayerEntity) player, manaToUse, true) && isEquipped)
             thisGear.setDamage(thisGear.getDamage() - 1);
     }
 

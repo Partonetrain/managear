@@ -47,7 +47,7 @@ description='''Mana Gear - SilentGear/Botania bridge'''
     # Does this dependency have to exist - if not, ordering below must be specified
     mandatory=true #mandatory
     # The version range of the dependency
-    versionRange="[r1.11-378,)" #mandatory
+    versionRange="[r1.15-383,)" #mandatory
     # An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
     ordering="AFTER"
     # Side this dependency is applied on - BOTH, CLIENT or SERVER
