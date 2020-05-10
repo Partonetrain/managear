@@ -42,9 +42,6 @@ repositories {
         url "https://dl.bintray.com/silentchaos512/silent-gear/"
     }
     maven {
-        url  "https://dl.bintray.com/silentchaos512/silent-gear"
-    }
-    maven {
         url  "https://dl.bintray.com/silentchaos512/silent-lib"
     }
     maven {
@@ -138,7 +135,7 @@ dependencies {
     compileOnly fg.deobf("top.theillusivec4.curios:curios:FORGE-1.15.2-2.0:api")
     runtimeOnly fg.deobf("top.theillusivec4.curios:curios:FORGE-1.15.2-2.0")
 
-    compile("net.silentchaos512:silent-gear-1.15.2:1.6.1")
+    compile("net.silentchaos512:silent-gear-1.15.2:1.6.3")
     compile("net.silentchaos512:silent-lib-1.15.2:4.+")
     compile("net.silentchaos512:silent-utils:1.0.7")
 

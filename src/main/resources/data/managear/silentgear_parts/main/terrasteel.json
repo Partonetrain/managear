@@ -1,59 +1,20 @@
 {
   "type": "silentgear:main",
-  "stats": [
-    {
-      "name": "durability",
-      "value": 3200
-    },
-    {
-      "name": "armor_durability",
-      "value": 32
-    },
-    {
-      "name": "enchantability",
-      "value": 26
-    },
-    {
-      "name": "harvest_level",
-      "value": 4
-    },
-    {
-      "name": "harvest_speed",
-      "value": 9
-    },
-    {
-      "name": "melee_damage",
-      "value": 3
-    },
-    {
-      "name": "attack_speed",
-      "value": -0.1
-    },
-    {
-      "name": "armor",
-      "value": 22
-    },
-    {
-      "name": "armor_toughness",
-      "value": 10
-    },
-    {
-      "name": "ranged_damage",
-      "value": 2.0
-    },
-    {
-      "name": "ranged_speed",
-      "value": 0.2
-    },
-    {
-      "name": "rarity",
-      "value": 45
-    },
-    {
-      "name": "chargeability",
-      "value": 1.5
-    }
-  ],
+  "stats": {
+     "durability": 3200,
+     "armor_durability": 32,
+     "enchantability": 26,
+     "harvest_level": 4,
+     "harvest_speed": 9,
+     "melee_damage": 3,
+     "attack_speed": -0.1,
+     "armor": 22,
+     "armor_toughness": 10,
+     "ranged_damage": 2.0,
+     "ranged_speed": 0.2,
+     "rarity": 45,
+     "chargeability": 1.5
+  },
   "traits": [
     {
       "name": "managear:mana",

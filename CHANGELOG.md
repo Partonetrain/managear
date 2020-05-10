@@ -1,3 +1,7 @@
+Unreleased
+============
+* Reformat part JSON to conform to Silent Gear 1.6.3
+
 1.1.1
 ============
 * Fixed #1 - Crash on using manasteel hammer
