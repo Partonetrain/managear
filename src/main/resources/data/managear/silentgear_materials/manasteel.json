@@ -1,0 +1,112 @@
+{
+  "availability": {
+    "tier": 2,
+    "visible": true,
+    "gear_blacklist": []
+  },
+  "crafting_items": {
+    "main": {
+      "tag": "forge:ingots/manasteel"
+    }
+  },
+  "name": {
+    "translate": "material.managear.manasteel"
+  },
+  "display": {
+    "main/all": [
+      {
+        "texture": "silentgear:main_generic_hc",
+        "color": "#68AFEE"
+      },
+      {
+        "texture": "silentgear:_highlight",
+        "color": "#68AFEE"
+      }
+    ],
+    "main/armor": [
+      {
+        "texture": "silentgear:main_generic_hc",
+        "color": "#68AFEE"
+      },
+      {
+        "texture": "silentgear:_highlight",
+        "color": "#68AFEE"
+      }
+    ],
+    "rod/all": [
+      {
+        "texture": "silentgear:rod_generic_lc",
+        "color": "#68AFEE"
+      }
+    ],
+    "tip/all": [
+      {
+        "texture": "silentgear:tip_iron"
+      }
+    ]
+  },
+  "stats": {
+    "main": {
+      "durability": 300.0,
+      "armor_durability": 16.0,
+      "enchantability": 20.0,
+      "harvest_level": 3.0,
+      "harvest_speed": 6.0,
+      "melee_damage": 2.0,
+      "attack_speed": -0.1,
+      "armor": 15.0,
+      "armor_toughness": 0.0,
+      "ranged_damage": 1.0,
+      "ranged_speed": 0.1,
+      "rarity": 20.0,
+      "silentgems:chargeability": 1.0
+    },
+    "tip": {
+      "durability": {
+        "add": 150.0
+      },
+      "armor_durability": {
+        "add": 5.0
+      },
+      "harvest_level": {
+        "max": 3.0
+      },
+      "harvest_speed": {
+        "add": 1.0
+      },
+      "melee_damage": {
+        "add": 1.0
+      },
+      "rarity": {
+        "add": 8.0
+      }
+    },
+    "rod": {
+      "rarity": 20.0
+    }
+  },
+  "traits": {
+    "main": [
+      {
+        "name": "silentgear:malleable",
+        "level": 2
+      },
+      {
+        "name": "managear:mana",
+        "level": 1,
+        "conditions": [
+          {
+            "type": "silentgear:material_ratio",
+            "ratio": 0.66
+          }
+        ]
+      }
+    ],
+    "tip": [
+      {
+        "name": "managear:mana",
+        "level": 1
+      }
+    ]
+  }
+}
