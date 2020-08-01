@@ -1,0 +1,125 @@
+{
+  "availability": {
+    "tier": 3,
+    "visible": true,
+    "gear_blacklist": []
+  },
+  "crafting_items": {
+    "main": {
+      "tag": "forge:ingots/elementium"
+    }
+  },
+  "name": {
+    "translate": "material.managear.manasteel"
+  },
+  "display": {
+    "main/all": [
+      {
+        "texture": "silentgear:main_generic_hc",
+        "color": "#EF8CBD"
+      },
+      {
+        "texture": "silentgear:_highlight",
+        "color": "#EF8CBD"
+      }
+    ],
+    "main/armor": [
+      {
+        "texture": "silentgear:main_generic_hc",
+        "color": "#EF8CBD"
+      },
+      {
+        "texture": "silentgear:_highlight",
+        "color": "#EF8CBD"
+      }
+    ],
+    "rod/all": [
+      {
+        "texture": "silentgear:rod_generic_lc",
+        "color": "#EF8CBD"
+      }
+    ],
+    "tip/all": [
+      {
+        "texture": "silentgear:tip_iron"
+      }
+    ]
+  },
+  "stats": {
+    "main": {
+      "durability": 720.0,
+      "armor_durability": 18.0,
+      "enchantability": 20.0,
+      "harvest_level": 3.0,
+      "harvest_speed": 6.2,
+      "melee_damage": 2.0,
+      "attack_speed": -0.1,
+      "armor": 16.0,
+      "armor_toughness": 0.0,
+      "ranged_damage": 1.5,
+      "ranged_speed": 0.1,
+      "rarity": 30.0,
+      "silentgems:chargeability": 1.2
+    },
+    "tip": {
+      "durability": {
+        "add": 200.0
+      },
+      "armor_durability": {
+        "add": 4.0
+      },
+      "harvest_speed": {
+        "add": 1.0
+      },
+      "melee_damage": {
+        "add": 1.0
+      },
+      "ranged_speed": {
+        "add": 0.2
+      },
+      "rarity": {
+        "add": 8.0
+      }
+    }
+  },
+  "traits": {
+    "main": [
+      {
+        "name": "silentgear:malleable",
+        "level": 2
+      },
+      {
+        "name": "managear:mana",
+        "level": 1,
+        "conditions": [
+          {
+            "type": "silentgear:material_ratio",
+            "ratio": 0.66
+          }
+        ]
+      },
+      {
+        "name": "managear:pixie",
+        "level": 1,
+        "conditions": [
+          {
+            "type": "silentgear:material_ratio",
+            "ratio": 0.66
+          }
+        ]
+      }
+    ],
+    "tip": [
+      {
+        "name": "managear:pixie",
+        "level": 1,
+        "conditions": [
+          {
+            "type": "silentgear:material_ratio",
+            "ratio": 0.66
+          }
+        ]
+      }
+    ]
+  }
+}
