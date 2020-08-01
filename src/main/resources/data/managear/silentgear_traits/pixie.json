@@ -5,7 +5,7 @@
   "attribute_modifiers": {
     "armor/head": [
       {
-        "attribute": "botania:pixie_spawn_chance",
+        "attribute": "botania.pixieSpawnChance",
         "value": [
           0.11
         ],
@@ -14,7 +14,7 @@
     ],
     "armor/chest": [
       {
-        "attribute": "botania:pixie_spawn_chance",
+        "attribute": "botania.pixieSpawnChance",
         "value": [
           0.17
         ],
@@ -23,7 +23,7 @@
     ],
     "armor/legs": [
       {
-        "attribute": "botania:pixie_spawn_chance",
+        "attribute": "botania.pixieSpawnChance",
         "value": [
           0.15
         ],
@@ -32,7 +32,7 @@
     ],
     "armor/feet": [
       {
-        "attribute": "botania:pixie_spawn_chance",
+        "attribute": "botania.pixieSpawnChance",
         "value": [
           0.09
         ],
@@ -41,7 +41,7 @@
     ],
     "tool/mainhand": [
       {
-        "attribute": "botania:pixie_spawn_chance",
+        "attribute": "botania.pixieSpawnChance",
         "value": [
           0.05
         ],
@@ -50,7 +50,7 @@
     ],
     "tool/offhand": [
       {
-        "attribute": "botania:pixie_spawn_chance",
+        "attribute": "botania.pixieSpawnChance",
         "value": [
           0.025
         ],

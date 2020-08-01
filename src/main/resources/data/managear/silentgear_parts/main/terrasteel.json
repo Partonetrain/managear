@@ -1,0 +1,58 @@
+{
+  "type": "silentgear:main",
+  "stats": {
+     "durability": 3200,
+     "armor_durability": 32,
+     "enchantability": 26,
+     "harvest_level": 4,
+     "harvest_speed": 9,
+     "melee_damage": 3,
+     "attack_speed": -0.1,
+     "armor": 22,
+     "armor_toughness": 10,
+     "ranged_damage": 2.0,
+     "ranged_speed": 0.2,
+     "rarity": 45,
+     "chargeability": 1.5
+  },
+  "traits": [
+    {
+      "name": "managear:mana",
+      "level": 2
+    },
+    {
+      "name": "silentgear:malleable",
+      "level": 2
+    },
+    {
+      "name": "silentgear:synergistic",
+      "level": 3
+    }
+  ],
+  "crafting_items": {
+    "normal": {
+      "tag": "forge:ingots/terrasteel"
+    },
+    "small": {
+      "tag": "forge:nuggets/terrasteel",
+      "size": 9
+    }
+  },
+  "name": {
+    "translate": "part.managear.main.terrasteel"
+  },
+  "textures": {
+    "all": {
+      "lite_texture": "high_contrast_with_highlight",
+      "highlight": true,
+      "texture_domain": "silentgear",
+      "texture_suffix": "diamond",
+      "normal_color": "#57FF0D",
+      "broken_color": "#57FF0D"
+    }
+  },
+  "availability": {
+    "tier": 3,
+    "gear_blacklist": []
+  }
+}
