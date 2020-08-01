@@ -1,6 +1,10 @@
-Unreleased
+2.0.1
 ============
-* Reformat part JSON to conform to Silent Gear 1.6.3
+* Fix #3, but for 1.16
+
+2.0
+============
+* port to 1.16.1
 
 1.1.1
 ============
