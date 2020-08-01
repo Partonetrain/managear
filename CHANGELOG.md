@@ -1,6 +1,7 @@
-Unreleased
+1.15.2-1.1.2
 ============
-* Reformat part JSON to conform to Silent Gear 1.6.3
+* Add model jsons, now required for SGear 1.11.0 - Fixes #3
+* 1.15 will still use adapted main parts
 
 1.1.1
 ============
