@@ -6,7 +6,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.world.World;
 import net.silentchaos512.gear.api.traits.TraitActionContext;
-import net.silentchaos512.gear.traits.SimpleTrait;
+import net.silentchaos512.gear.gear.trait.SimpleTrait;
 import vazkii.botania.api.mana.ManaItemHandler;
 
 public class ManaTrait extends SimpleTrait {

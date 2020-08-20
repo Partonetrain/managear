@@ -1,3 +1,7 @@
+2.1.0
+============
+* Should Fix #5 - Latest Silent Gear update requires this mod to update. 
+
 2.0.1
 ============
 * Fix #3, but for 1.16
