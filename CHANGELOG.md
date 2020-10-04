@@ -1,5 +1,10 @@
 2.1.0
 ============
+* Rebalanced materials: Materials now requires a ratio of 50% in Gear to get the Mana trait (to encourage material mixing)
+* Fix #6 - ManaGear Terrasteel armor isn't piglin-proof
+
+2.1.0
+============
 * Should Fix #5 - Latest Silent Gear update requires this mod to update. 
 
 2.0.1
