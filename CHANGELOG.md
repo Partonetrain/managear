@@ -1,4 +1,8 @@
-2.1.0
+1.16.3-2.1.2
+============
+* Updated to 1.16.3
+
+2.1.1
 ============
 * Rebalanced materials: Materials now requires a ratio of 50% in Gear to get the Mana trait (to encourage material mixing)
 * Fix #6 - ManaGear Terrasteel armor isn't piglin-proof
