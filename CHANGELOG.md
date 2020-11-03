@@ -1,3 +1,7 @@
+1.16.3-2.1.3
+============
+* Fix #7 - Mana Tablet gets drained completely if tool not held (this one's pretty bad, make sure you update)
+
 1.16.3-2.1.2
 ============
 * Updated to 1.16.3

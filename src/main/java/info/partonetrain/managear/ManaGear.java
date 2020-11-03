@@ -44,7 +44,7 @@ public class ManaGear {
 
     private void setup(final FMLCommonSetupEvent event) {
         // some preinit code
-        LOGGER.debug("ManaGear Loading");
+        //LOGGER.debug("ManaGear Loading");
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {
