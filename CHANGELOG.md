@@ -1,3 +1,8 @@
+1.16.3-2.2.0
+============
+* Weapons made of at least 50% Terrasteel will now spawn mana bursts like the Terra Blade
+* The Brilliant trait Terrasteel is now restricted to armor like you'd expect
+
 1.16.3-2.1.3
 ============
 * Fix #7 - Mana Tablet gets drained completely if tool not held (this one's pretty bad, make sure you update)
