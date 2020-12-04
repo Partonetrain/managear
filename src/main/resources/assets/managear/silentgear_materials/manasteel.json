@@ -31,19 +31,21 @@
   ],
   "tip/all": [
     {
-      "texture": "silentgear:tip_sharp"
+      "texture": "silentgear:tip_sharp",
+      "color": "#68AFEE"
     }
   ],
   "tip/part": [
     {
-      "texture": "silentgear:tip_base",
+      "texture": "silentgear:tip_base"
+    },
+    {
+      "texture": "silentgear:tip",
       "color": "#68AFEE"
     },
     {
-      "texture": "silentgear:tip"
-    },
-    {
-      "texture": "silentgear:tip_shine"
+      "texture": "silentgear:tip_shine",
+      "color": "#68AFEE"
     }
   ]
 }

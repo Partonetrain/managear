@@ -131,8 +131,14 @@
     ],
     "tip": [
       {
-        "name": "managear:mana",
-        "level": 2
+        "name": "managear:manaburst",
+        "level": 1,
+        "conditions": [
+          {
+            "type": "silentgear:gear_type",
+            "gear_type": "weapon"
+          }
+        ]
       }
     ]
   }

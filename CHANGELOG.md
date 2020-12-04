@@ -1,6 +1,7 @@
-1.16.3-2.2.1 (unreleased)
+1.16.3-2.2.1
 ============
 * Manasteel, Elementium, and Terrasteel Tips now have icons
+* Terrasteel tips now give Manaburst trait instead of Mana II
 
 
 1.16.3-2.2.0
