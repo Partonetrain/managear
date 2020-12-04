@@ -1,3 +1,8 @@
+1.16.3-2.2.1 (unreleased)
+============
+* Manasteel, Elementium, and Terrasteel Tips now have icons
+
+
 1.16.3-2.2.0
 ============
 * Weapons made of at least 50% Terrasteel will now spawn mana bursts like the Terra Blade

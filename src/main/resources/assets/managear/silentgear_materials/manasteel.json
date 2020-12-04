@@ -28,5 +28,22 @@
       "texture": "silentgear:rod",
       "color": "#68AFEE"
     }
+  ],
+  "tip/all": [
+    {
+      "texture": "silentgear:tip_sharp"
+    }
+  ],
+  "tip/part": [
+    {
+      "texture": "silentgear:tip_base",
+      "color": "#68AFEE"
+    },
+    {
+      "texture": "silentgear:tip"
+    },
+    {
+      "texture": "silentgear:tip_shine"
+    }
   ]
 }

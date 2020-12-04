@@ -14,7 +14,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 
-version = '1.16.3-2.2.0'
+version = '1.16.3-2.2.1'
 group = 'info.partonetrain.managear' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = 'managear'
 
