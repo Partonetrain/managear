@@ -44,7 +44,7 @@ public class ManaGear {
 
     private void setup(final FMLCommonSetupEvent event) {
         // some preinit code
-        //LOGGER.debug("ManaGear Loading");
+        LOGGER.info("ManaGear Installed -  Please ensure you downloaded from CurseForge!");
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {

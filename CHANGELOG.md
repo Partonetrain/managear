@@ -1,3 +1,9 @@
+1.16.3-2.2.2
+============
+* Fixed Elementium material's display name - it was using Manasteel's.
+* Added a log message asking the user to ensure they downloaded from CurseForge (It came to my attention this mod is now on a certain notorious mod reposting site)
+
+
 1.16.3-2.2.1
 ============
 * Manasteel, Elementium, and Terrasteel Tips now have icons
