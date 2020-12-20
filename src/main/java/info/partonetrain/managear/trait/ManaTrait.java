@@ -9,6 +9,8 @@ import net.silentchaos512.gear.api.traits.TraitActionContext;
 import net.silentchaos512.gear.gear.trait.SimpleTrait;
 import vazkii.botania.api.mana.ManaItemHandler;
 
+import java.util.Collection;
+
 public class ManaTrait extends SimpleTrait {
 
     public static final Serializer<ManaTrait> SERIALIZER = new Serializer<>(ManaGear.getId("mana"), ManaTrait::new);
@@ -34,6 +36,14 @@ public class ManaTrait extends SimpleTrait {
                 }
             }
         }
+    }
+
+    @Override
+    public Collection<String> getExtraWikiLines() {
+        Collection<String> ret = super.getExtraWikiLines();
+        ret.add("Mana I uses " + MANA_PER_DAMAGE_TIER_ONE + " mana per repair.");
+        ret.add("Mana II uses " + MANA_PER_DAMAGE_TIER_TWO + " mana per repair.");
+        return ret;
     }
 
     public ManaTrait(ResourceLocation id) {

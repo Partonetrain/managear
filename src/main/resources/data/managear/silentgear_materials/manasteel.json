@@ -1,8 +1,12 @@
 {
   "availability": {
     "tier": 2,
+    "categories": [
+      "metal"
+    ],
     "visible": true,
-    "gear_blacklist": []
+    "gear_blacklist": [],
+    "can_salvage": true
   },
   "crafting_items": {
     "main": {
@@ -59,17 +63,20 @@
       "ranged_damage": 1.0,
       "ranged_speed": 0.1,
       "rarity": 20.0,
-      "silentgems:chargeability": 1.0
+      "silentgems:chargeability": 1.0,
+      "projectile_speed": 1.0,
+      "projectile_accuracy": 1.1,
+      "magic_armor": 7.0
     },
     "tip": {
       "durability": {
         "add": 150.0
       },
-      "armor_durability": {
-        "add": 5.0
-      },
       "harvest_level": {
         "max": 3.0
+      },
+      "armor_durability": {
+        "add": 4.0
       },
       "harvest_speed": {
         "add": 1.0
@@ -78,7 +85,7 @@
         "add": 1.0
       },
       "rarity": {
-        "add": 8.0
+        "add": 10.0
       }
     }
   },

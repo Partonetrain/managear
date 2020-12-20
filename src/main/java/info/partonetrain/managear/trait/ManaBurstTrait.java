@@ -13,6 +13,8 @@ import vazkii.botania.common.entity.EntityManaBurst;
 import vazkii.botania.common.item.ModItems;
 import vazkii.botania.common.item.equipment.tool.terrasteel.ItemTerraSword;
 
+import java.util.Collection;
+
 public class ManaBurstTrait extends SimpleTrait {
 
     public static final Serializer<ManaBurstTrait> SERIALIZER = new Serializer<>(ManaGear.getId("manaburst"), ManaBurstTrait::new);
@@ -34,5 +36,12 @@ public class ManaBurstTrait extends SimpleTrait {
 
     public ManaBurstTrait(ResourceLocation id) {
         super(id, SERIALIZER);
+    }
+
+    @Override
+    public Collection<String> getExtraWikiLines() {
+        Collection<String> ret = super.getExtraWikiLines();
+        ret.add("The Mana Burst is identical to that of a default, unenchanted Terra Blade. Uses 100 mana per burst.");
+        return ret;
     }
 }

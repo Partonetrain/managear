@@ -1,3 +1,9 @@
+1.16.3-2.2.3
+============
+* Added Material categories (unused, likely to be used for Synergy calculations in SGear 1.17+)
+* Adjusted some stats
+* Added extra wiki lines to Mana Burst and Mana traits (use /sgear_traits dump_md)
+
 1.16.3-2.2.2
 ============
 * Fixed Elementium material's display name - it was using Manasteel's.
