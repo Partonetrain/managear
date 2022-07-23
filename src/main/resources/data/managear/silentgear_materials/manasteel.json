@@ -1,4 +1,6 @@
 {
+  "type": "silentgear:standard",
+  "simple": true,
   "availability": {
     "tier": 2,
     "categories": [
@@ -16,7 +18,7 @@
   "name": {
     "translate": "material.managear.manasteel"
   },
-  "display": {
+  "model": {
     "main/all": [
       {
         "texture": "silentgear:main_generic_hc",

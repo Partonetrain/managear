@@ -1,10 +1,11 @@
 package info.partonetrain.managear.trait;
 
 import info.partonetrain.managear.ManaGear;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.ResourceLocation;
-import net.minecraft.world.World;
+import net.minecraft.client.gui.screens.social.PlayerEntry;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.level.Level;
 import net.silentchaos512.gear.api.traits.TraitActionContext;
 import net.silentchaos512.gear.gear.trait.SimpleTrait;
 import vazkii.botania.api.mana.ManaItemHandler;
@@ -13,15 +14,15 @@ import java.util.Collection;
 
 public class ManaTrait extends SimpleTrait {
 
-    public static final Serializer<ManaTrait> SERIALIZER = new Serializer<>(ManaGear.getId("mana"), ManaTrait::new);
+    public static final Serializer<ManaTrait> SERIALIZER = new Serializer<ManaTrait>(ManaGear.getId("mana"), ManaTrait::new);
 
     private static final int MANA_PER_DAMAGE_TIER_ONE = 60;
     private static final int MANA_PER_DAMAGE_TIER_TWO = 100;
 
     @Override
     public void onUpdate(TraitActionContext context, boolean isEquipped) {
-        PlayerEntity player = context.getPlayer();
-        World world = player.getEntityWorld();
+        Player player = context.getPlayer();
+        Level world = player.getLevel();
         int manaToUse;
         if (context.getTraitLevel() == 2)
             manaToUse = MANA_PER_DAMAGE_TIER_TWO;
@@ -29,10 +30,10 @@ public class ManaTrait extends SimpleTrait {
             manaToUse = MANA_PER_DAMAGE_TIER_ONE;
 
         ItemStack thisGear = context.getGear();
-        if (!world.isRemote && player instanceof PlayerEntity && isEquipped) {
-            if (thisGear.getDamage() > 0) {
-                if (ManaItemHandler.instance().requestManaExactForTool(thisGear, (PlayerEntity) player, manaToUse, true)) {
-                    thisGear.setDamage(thisGear.getDamage() - 1);
+        if (!world.isClientSide() && player instanceof Player && isEquipped) {
+            if (thisGear.getDamageValue() > 0) {
+                if (ManaItemHandler.instance().requestManaExactForTool(thisGear, player, manaToUse, true)) {
+                    thisGear.setDamageValue(thisGear.getDamageValue() - 1);
                 }
             }
         }
