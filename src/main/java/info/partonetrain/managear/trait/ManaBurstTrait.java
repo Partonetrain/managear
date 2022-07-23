@@ -29,18 +29,18 @@ public class ManaBurstTrait extends SimpleTrait {
         //Partonetrain#9679: willie can I copy this method for ManaGear :wacko:
         //williewillus#8490: sure
         Player player = (Player) entity;
-        if(!entity.getLevel().isClientSide()) {
+        if(!entity.getLevel().isClientSide() && !player.isSpectator()) {
             if (!player.getMainHandItem().isEmpty()) {
                 ItemStack gearItemStack = player.getMainHandItem();
-                ItemTerraSword.trySpawnBurst(player);
 
                 if (player.getAttackStrengthScale(0F) == 1) {
-                    EntityManaBurst burst = ((ItemTerraSword) ModItems.terraSword).getBurst(player, ModItems.terraSword.getDefaultInstance());
+                    // The default instance is really our only way, ILensEffect (or any item interface for that matter)
+                    // is not really possible with silent gear system because it is tied to the tool and not the trait
+                    // (at least for now...)
+                    EntityManaBurst burst = ItemTerraSword.getBurst(player, ModItems.terraSword.getDefaultInstance());
                     player.getLevel().addFreshEntity(burst);
 
-                    gearItemStack.hurtAndBreak(1, player, (p) -> {
-                        p.broadcastBreakEvent(EquipmentSlot.MAINHAND);
-                    });
+                    gearItemStack.hurtAndBreak(1, player, p -> p.broadcastBreakEvent(EquipmentSlot.MAINHAND));
                     ManaGear.LOGGER.log(Level.INFO, gearItemStack.getDamageValue());
 
                     player.getLevel().playSound(null, player.getX(), player.getY(), player.getZ(), ModSounds.terraBlade, SoundSource.PLAYERS, 1F, 1F);
