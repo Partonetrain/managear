@@ -11,7 +11,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.silentchaos512.gear.gear.trait.SimpleTrait;
 import org.apache.logging.log4j.Level;
-import vazkii.botania.common.entity.EntityManaBurst;
+import vazkii.botania.common.entity.ManaBurstEntity;
 import vazkii.botania.common.handler.ModSounds;
 import vazkii.botania.common.item.ModItems;
 import vazkii.botania.common.item.equipment.armor.elementium.ItemElementiumBoots;
@@ -37,7 +37,7 @@ public class ManaBurstTrait extends SimpleTrait {
                     // The default instance is really our only way, ILensEffect (or any item interface for that matter)
                     // is not really possible with silent gear system because it is tied to the tool and not the trait
                     // (at least for now...)
-                    EntityManaBurst burst = ItemTerraSword.getBurst(player, ModItems.terraSword.getDefaultInstance());
+                    ManaBurstEntity burst = ItemTerraSword.getBurst(player, ModItems.terraSword.getDefaultInstance());
                     player.getLevel().addFreshEntity(burst);
 
                     gearItemStack.hurtAndBreak(1, player, p -> p.broadcastBreakEvent(EquipmentSlot.MAINHAND));
