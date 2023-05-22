@@ -1,30 +1,18 @@
-buildscript {
-    repositories {
-        // These repositories are only for Gradle plugins, put any other repositories in the repository block further below
-        maven { url = 'https://maven.minecraftforge.net' }
-        mavenCentral()
-    }
-    dependencies {
-        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
-    }
-}
-// Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
 plugins {
     id 'eclipse'
     id 'maven-publish'
+    id 'net.minecraftforge.gradle' version '5.1.+'
 }
-apply plugin: 'net.minecraftforge.gradle'
 
-
-version = '1.18.2-2.2.4'
+version = "${mc_version}-2.3.0"
 group = 'info.partonetrain.managear' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = 'managear'
+base.archivesName = 'managear'
 
 // Authentication details for GitHub packages
 // This can also go in the `repositories` block or you can inline it if you prefer
 def gpr_creds = {
-    username = property('gpr.username')
-    password = property('gpr.token')
+    username = property('username')
+    password = property('token')
 }
 
 // Mojang ships Java 17 to end users in 1.18+, so your mod should target Java 17.
@@ -45,7 +33,7 @@ minecraft {
     //
     // Use non-default mappings at your own risk. They may not always work.
     // Simply re-run your setup task after changing the mappings to update your workspace.
-    mappings channel: 'official', version: '1.18.2'
+    mappings channel: 'official', version: "${mc_version}"
 
     // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg') // Currently, this location cannot be changed from the default.
 
@@ -192,18 +180,19 @@ repositories {
     maven {
         url = uri("https://maven.pkg.github.com/silentchaos512/silent-utils")
         credentials gpr_creds
-    }
-    //backup jei maven
+    }  
     maven {
-        url "https://modmaven.k-4u.nl/mezz/jei/jei-1.16.3/"
-    }
+        //fallback
+        name = "ModMaven"
+        url = "https://modmaven.dev"
+  }
 }
 
 dependencies {
     // Specify the version of Minecraft to use. If this is any group other than 'net.minecraft', it is assumed
     // that the dep is a ForgeGradle 'patcher' dependency, and its patches will be applied.
     // The userdev artifact is a special name and will get all sorts of transformations applied to it.
-    minecraft 'net.minecraftforge:forge:1.18.2-40.1.68'
+    minecraft "net.minecraftforge:forge:${mc_version}-${forge_version}"
 
     // Real mod deobf dependency examples - these get remapped to your current mappings
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}:${jei_version}:api") // Adds JEI API as a compile dependency
@@ -217,27 +206,28 @@ dependencies {
     // http://www.gradle.org/docs/current/userguide/artifact_dependencies_tutorial.html
     // http://www.gradle.org/docs/current/userguide/dependency_management.html
 
-    compileOnly fg.deobf('vazkii.botania:Botania:1.18.2-434:api')
-    implementation fg.deobf('vazkii.botania:Botania:1.18.2-434')
+    compileOnly fg.deobf("vazkii.botania:Botania:${mc_version}-439-FORGE:api")
+    implementation fg.deobf("vazkii.botania:Botania:${mc_version}-439-FORGE")
 
-    compileOnly fg.deobf("vazkii.patchouli:Patchouli:1.18.2-71.+:api")
-    runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:1.18.2-71.+")
+    compileOnly fg.deobf("vazkii.patchouli:Patchouli:${mc_version}-77:api")
+    runtimeOnly fg.deobf("vazkii.patchouli:Patchouli:${mc_version}-77")
 
-    compileOnly fg.deobf("mezz.jei:jei-1.18.2:9.7+:api")
-    runtimeOnly fg.deobf("mezz.jei:jei-1.18.2:9.7+")
+    compileOnly fg.deobf("mezz.jei:jei-${mc_version}-forge-api:11.4.0.285")
+    runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}-forge:11.4.0.285")
 
-    compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:1.18.2-5.0.7+:api")
-    runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:1.18.2-5.0.7+")
-
-    implementation fg.deobf("net.silentchaos512:silent-lib:1.18.2-6.+") {
-        exclude module: "forge"
+    implementation fg.deobf("net.silentchaos512:silent-lib:${mc_version}-7.0.3") {
+        transitive false
     }
 
-    implementation fg.deobf("net.silentchaos512:silent-gear:1.18.2-2.10.10") {
-        exclude module: 'forge'
-        exclude module: 'jei-1.18.2'
-        exclude module: 'silent-lib'
-        exclude module: 'curios-forge'
+    compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:${mc_version}-5.1.4.1:api")
+    runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:${mc_version}-5.1.4.1")
+
+    implementation fg.deobf("net.silentchaos512:silent-gear:${mc_version}-3.2.5") {
+        transitive false
+    //     exclude module: 'forge'
+    //     exclude module: "jei-${mc_version}"
+    //     exclude module: 'silent-lib'
+    //     exclude module: 'curios-forge'
     }
 }
 
